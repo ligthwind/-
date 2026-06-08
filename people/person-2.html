@@ -10,6 +10,7 @@
 </head>
 <body>
   <header class="person-hero">
+    <img class="hero-fill" src="../backgrounds/person-2.png" alt="">
     <img class="hero-bg" src="../backgrounds/person-2.png" alt="">
     <div class="hero-inner">
       <p class="eyebrow">Person 02</p>
@@ -22,7 +23,9 @@
     <a href="../index.html">返回首页</a>
     <a href="person-1.html">上一个人物</a>
     <a href="person-3.html">下一个人物</a>
+    <button class="music-control" type="button" data-bgm-toggle hidden>播放背景音乐</button>
   </nav>
+  <audio data-bgm src="../audio/yangru.mp3" autoplay loop preload="auto"></audio>
 
   <main class="person-main">
     <section aria-labelledby="person-title">
@@ -33,9 +36,15 @@
 
       <div class="person-grid">
         <div class="gallery">
-          <a class="tile" href="../photos/section-2/1.jpg" data-gallery-item data-caption="杨汝照片 1"><img src="../photos/section-2/1.jpg" alt="杨汝照片 1"><span>照片 1</span></a>
-          <a class="tile" href="../photos/section-2/2.jpg" data-gallery-item data-caption="杨汝照片 2"><img src="../photos/section-2/2.jpg" alt="杨汝照片 2"><span>照片 2</span></a>
-          <a class="tile" href="../photos/section-2/3.jpg" data-gallery-item data-caption="杨汝照片 3"><img src="../photos/section-2/3.jpg" alt="杨汝照片 3"><span>照片 3</span></a>
+          <a class="tile" href="../photos/yangru/1.jpg" data-gallery-item data-caption="杨汝照片 1"><img src="../photos/yangru/1.jpg" alt="杨汝照片 1"><span>照片 1</span></a>
+          <a class="tile" href="../photos/yangru/2.jpg" data-gallery-item data-caption="杨汝照片 2"><img src="../photos/yangru/2.jpg" alt="杨汝照片 2"><span>照片 2</span></a>
+          <a class="tile" href="../photos/yangru/3.jpg" data-gallery-item data-caption="杨汝照片 3"><img src="../photos/yangru/3.jpg" alt="杨汝照片 3"><span>照片 3</span></a>
+          <a class="tile" href="../photos/yangru/4.jpg" data-gallery-item data-caption="杨汝照片 4"><img src="../photos/yangru/4.jpg" alt="杨汝照片 4"><span>照片 4</span></a>
+          <a class="tile" href="../photos/yangru/5.jpg" data-gallery-item data-caption="杨汝照片 5"><img src="../photos/yangru/5.jpg" alt="杨汝照片 5"><span>照片 5</span></a>
+          <a class="tile" href="../photos/yangru/6.jpg" data-gallery-item data-caption="杨汝照片 6"><img src="../photos/yangru/6.jpg" alt="杨汝照片 6"><span>照片 6</span></a>
+          <a class="tile" href="../photos/yangru/7.jpg" data-gallery-item data-caption="杨汝照片 7"><img src="../photos/yangru/7.jpg" alt="杨汝照片 7"><span>照片 7</span></a>
+          <a class="tile" href="../photos/yangru/8.jpg" data-gallery-item data-caption="杨汝照片 8"><img src="../photos/yangru/8.jpg" alt="杨汝照片 8"><span>照片 8</span></a>
+          <a class="tile" href="../photos/yangru/9.jpg" data-gallery-item data-caption="杨汝照片 9"><img src="../photos/yangru/9.jpg" alt="杨汝照片 9"><span>照片 9</span></a>
         </div>
         <div class="video-card">
           <video controls preload="metadata" poster="../videos/section-2/poster.svg"><source src="../videos/section-2/your-video.mp4" type="video/mp4"></video>
@@ -54,5 +63,6 @@
     <button class="lightbox-nav lightbox-next" type="button" aria-label="下一张">&rsaquo;</button>
   </div>
   <script src="../gallery.js"></script>
+  <script src="../bgm.js"></script>
 </body>
 </html>
