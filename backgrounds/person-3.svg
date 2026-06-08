@@ -1,0 +1,32 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1600" height="1000" viewBox="0 0 1600 1000">
+  <defs>
+    <radialGradient id="rose" cx="45%" cy="40%" r="62%">
+      <stop offset="0" stop-color="#ff6b6b"/>
+      <stop offset="0.48" stop-color="#dd111d"/>
+      <stop offset="1" stop-color="#8d0710"/>
+    </radialGradient>
+    <linearGradient id="stem" x1="0" x2="1" y1="0" y2="1">
+      <stop offset="0" stop-color="#2f6b39"/>
+      <stop offset="1" stop-color="#102a17"/>
+    </linearGradient>
+  </defs>
+  <rect width="1600" height="1000" fill="#f2f2f0"/>
+  <path d="M650 430 C620 600 580 760 520 1000" fill="none" stroke="url(#stem)" stroke-width="24"/>
+  <path d="M950 400 C900 610 875 760 840 1000" fill="none" stroke="url(#stem)" stroke-width="24"/>
+  <ellipse cx="515" cy="720" rx="150" ry="54" fill="#1d512a" transform="rotate(-24 515 720)"/>
+  <ellipse cx="930" cy="700" rx="150" ry="54" fill="#1d512a" transform="rotate(20 930 700)"/>
+  <g transform="translate(650 355)">
+    <circle r="185" fill="url(#rose)"/>
+    <path d="M-115 -40 C-70 -180 130 -170 125 -18 C70 -85 -10 -70 -115 -40Z" fill="#f3313c"/>
+    <path d="M-135 45 C-35 10 40 12 130 75 C20 162 -95 145 -135 45Z" fill="#b90917"/>
+    <path d="M-30 -105 C72 -82 92 50 10 98 C36 18 10 -38 -30 -105Z" fill="#8d0710"/>
+    <path d="M-64 -30 C-10 -62 46 -42 68 12 C14 8 -24 4 -64 -30Z" fill="#ff7777"/>
+  </g>
+  <g transform="translate(955 330) scale(.92)">
+    <circle r="185" fill="url(#rose)"/>
+    <path d="M-115 -40 C-70 -180 130 -170 125 -18 C70 -85 -10 -70 -115 -40Z" fill="#f3313c"/>
+    <path d="M-135 45 C-35 10 40 12 130 75 C20 162 -95 145 -135 45Z" fill="#b90917"/>
+    <path d="M-30 -105 C72 -82 92 50 10 98 C36 18 10 -38 -30 -105Z" fill="#8d0710"/>
+    <path d="M-64 -30 C-10 -62 46 -42 68 12 C14 8 -24 4 -64 -30Z" fill="#ff7777"/>
+  </g>
+</svg>
