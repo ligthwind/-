@@ -3,11 +3,9 @@ const bgmButton = document.querySelector("[data-bgm-toggle]");
 
 async function playBgm() {
   if (!bgmAudio) return;
-  if (bgmAudio.networkState === HTMLMediaElement.NETWORK_NO_SOURCE) {
-    if (bgmButton) bgmButton.textContent = "未上传音乐";
-    return;
-  }
   try {
+    bgmAudio.muted = false;
+    bgmAudio.volume = 1;
     await bgmAudio.play();
     if (bgmButton) bgmButton.textContent = "暂停背景音乐";
   } catch {
@@ -33,7 +31,7 @@ if (bgmButton) {
 
 if (bgmAudio) {
   bgmAudio.addEventListener("error", () => {
-    if (bgmButton) bgmButton.textContent = "未上传音乐";
+    if (bgmButton) bgmButton.textContent = "音乐加载失败";
   });
   bgmAudio.addEventListener("play", () => {
     if (bgmButton) bgmButton.textContent = "暂停背景音乐";
