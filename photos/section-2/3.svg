@@ -1,7 +1,0 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="900" viewBox="0 0 1200 900">
-  <rect width="1200" height="900" fill="#172026"/>
-  <path d="M0 190 C210 90 370 310 560 190 C730 82 870 210 1200 92 L1200 900 L0 900 Z" fill="#0f766e"/>
-  <path d="M0 430 C220 320 420 520 640 410 C820 320 980 440 1200 360 L1200 900 L0 900 Z" fill="#8ecae6"/>
-  <path d="M0 685 C280 560 450 790 700 660 C880 570 1010 690 1200 610 L1200 900 L0 900 Z" fill="#f6bd60"/>
-  <text x="72" y="130" font-family="Arial, sans-serif" font-size="54" font-weight="700" fill="#ffffff">Photo 03</text>
-</svg>

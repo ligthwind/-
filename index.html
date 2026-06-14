@@ -244,6 +244,89 @@
       color: var(--ink);
     }
 
+    .album-grid {
+      display: grid;
+      grid-template-columns: repeat(3, minmax(0, 1fr));
+      gap: 16px;
+      margin-top: 10px;
+    }
+
+    .album-card {
+      position: relative;
+      display: grid;
+      min-height: 210px;
+      align-content: end;
+      overflow: hidden;
+      padding: 22px;
+      border-radius: 8px;
+      color: #fff;
+      text-decoration: none;
+      box-shadow: 0 18px 54px rgba(36, 68, 82, 0.16);
+      isolation: isolate;
+      animation: riseIn 720ms ease backwards;
+      transition: transform 220ms ease, box-shadow 220ms ease;
+    }
+
+    .album-card:nth-child(1) {
+      animation-delay: 680ms;
+    }
+
+    .album-card:nth-child(2) {
+      animation-delay: 760ms;
+    }
+
+    .album-card:nth-child(3) {
+      animation-delay: 840ms;
+    }
+
+    .album-card::before {
+      content: "";
+      position: absolute;
+      inset: 0;
+      z-index: -2;
+      background-image:
+        linear-gradient(135deg, rgba(7, 18, 24, 0.58), rgba(7, 18, 24, 0.18)),
+        var(--album-image);
+      background-size: cover;
+      background-position: center;
+      transition: transform 260ms ease, filter 260ms ease;
+    }
+
+    .album-card::after {
+      content: "";
+      position: absolute;
+      inset: 0;
+      z-index: -1;
+      background:
+        linear-gradient(180deg, rgba(7, 19, 24, 0.04), rgba(7, 19, 24, 0.7)),
+        radial-gradient(circle at 18% 18%, rgba(255, 255, 255, 0.26), rgba(255, 255, 255, 0) 30%);
+    }
+
+    .album-card:hover,
+    .album-card:focus-visible {
+      transform: translateY(-6px);
+      box-shadow: 0 26px 70px rgba(36, 68, 82, 0.23);
+    }
+
+    .album-card:hover::before,
+    .album-card:focus-visible::before {
+      filter: saturate(1.08) brightness(1.04);
+      transform: scale(1.035);
+    }
+
+    .album-card strong {
+      font-size: clamp(30px, 4vw, 46px);
+      line-height: 1;
+      text-shadow: 0 2px 18px rgba(0, 0, 0, 0.34);
+    }
+
+    .album-card span {
+      margin-top: 12px;
+      font-size: 14px;
+      font-weight: 700;
+      color: rgba(255, 255, 255, 0.82);
+    }
+
     @keyframes heroReveal {
       from {
         opacity: 0;
@@ -279,6 +362,10 @@
       .people-grid {
         grid-template-columns: repeat(2, minmax(0, 1fr));
       }
+
+      .album-grid {
+        grid-template-columns: 1fr;
+      }
     }
 
     @media (max-width: 560px) {
@@ -306,9 +393,17 @@
         grid-template-columns: 1fr;
       }
 
+      .album-grid {
+        grid-template-columns: 1fr;
+      }
+
       .person-card,
       .person-card img {
         min-height: 360px;
+      }
+
+      .album-card {
+        min-height: 190px;
       }
 
       .home-memory {
@@ -321,6 +416,7 @@
       .home-hero .hero-inner,
       .home-intro,
       .person-card,
+      .album-card,
       .home-memory,
       .scroll-cue {
         animation: none;
@@ -339,7 +435,8 @@
     <div class="hero-inner">
       <p class="eyebrow">2026 / Graduation</p>
       <h1>盛夏 剩下</h1>
-      <p class="lead">打动我的文字，要么短暂，却有大片留白；要么细腻，细腻到写尽所有。就像现在，我们真实地看见彼此，多年以后再回头，却只剩下盛夏。</p>
+      <p class="lead">打动我的文字，要么短暂，却有大片留白；要么细腻，细腻到写尽所有。
+就像现在，我们真实地看见彼此，多年以后再回头，却只剩下盛夏。</p>
     </div>
     <button class="scroll-cue" type="button" data-scroll-target="#people-title">看相册</button>
   </header>
@@ -372,6 +469,26 @@
     <section class="home-memory" aria-label="毕业记录说明">
       <p><strong>四个人，四段独立的页面。</strong>把照片、音乐和那天的光线分开保存，点进去就像翻到一本相册里的某一页。</p>
       <p>Wuhan University · 2026</p>
+    </section>
+
+    <section class="home-intro" aria-labelledby="albums-title">
+      <h2 id="albums-title">更多板块</h2>
+      <p>把集体、寝室和男生们的照片单独放在这里，后续可以继续扩展。</p>
+    </section>
+
+    <section class="album-grid" aria-label="主题板块入口">
+      <a class="album-card" href="albums/504.html" style="--album-image: url('backgrounds/home.jpg')">
+        <strong>504</strong>
+        <span>进入主题相册</span>
+      </a>
+      <a class="album-card" href="albums/women.html" style="--album-image: url('backgrounds/home.jpg')">
+        <strong>我们</strong>
+        <span>进入主题相册</span>
+      </a>
+      <a class="album-card" href="albums/boy.html" style="--album-image: url('backgrounds/home.jpg')">
+        <strong>boy</strong>
+        <span>进入主题相册</span>
+      </a>
     </section>
   </main>
 

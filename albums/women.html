@@ -1,0 +1,90 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>我们</title>
+  <meta name="description" content="我们的毕业照片和视频记录">
+  <link rel="stylesheet" href="../style.css?v=20260609b">
+  <style>
+    .person-hero { --hero-image: url("../backgrounds/album-women.jpg"); }
+    .empty-album {
+      display: grid;
+      place-items: center;
+      min-height: 220px;
+      padding: 28px;
+      border: 1px dashed rgba(104, 121, 135, 0.42);
+      border-radius: 8px;
+      background: linear-gradient(180deg, #ffffff, #f3fafb);
+      color: var(--muted);
+      text-align: center;
+      line-height: 1.8;
+    }
+  </style>
+</head>
+<body>
+  <header class="person-hero">
+    <img class="hero-fill" src="../backgrounds/album-women.jpg" alt="">
+    <img class="hero-bg" src="../backgrounds/album-women.jpg" alt="">
+    <div class="hero-inner">
+      <p class="eyebrow">Album 02</p>
+      <h1>我们</h1>
+      <p class="lead">“那时陪伴我的人哪，你们如今在何方，我曾经爱过的人啊，现在是什么模样。”</p>
+    </div>
+  </header>
+
+  <nav class="top-nav" aria-label="页面导航">
+    <a href="../index.html">返回首页</a>
+    <a href="504.html">上一个板块</a>
+    <a href="boy.html">下一个板块</a>
+    <button class="music-control" type="button" data-bgm-toggle>播放背景音乐</button>
+  </nav>
+  <audio data-bgm src="../audio/women.mp3" autoplay loop preload="auto"></audio>
+
+  <main class="person-main">
+    <section aria-labelledby="album-title">
+      <div class="section-title">
+        <h2 id="album-title">照片和视频</h2>
+        <p class="note">点击照片可以放大查看；视频替换成自己的 MP4 后即可播放。</p>
+      </div>
+
+      <div class="person-grid">
+        <div class="gallery">
+          <a class="tile" href="../photos/women/1.jpg" data-gallery-item data-caption="我们照片 1"><img src="../photos/women/1.jpg" alt="我们照片 1"><span>照片 1</span></a>
+          <a class="tile" href="../photos/women/2.jpg" data-gallery-item data-caption="我们照片 2"><img src="../photos/women/2.jpg" alt="我们照片 2"><span>照片 2</span></a>
+          <a class="tile" href="../photos/women/3.jpg" data-gallery-item data-caption="我们照片 3"><img src="../photos/women/3.jpg" alt="我们照片 3"><span>照片 3</span></a>
+          <a class="tile" href="../photos/women/4.jpg" data-gallery-item data-caption="我们照片 4"><img src="../photos/women/4.jpg" alt="我们照片 4"><span>照片 4</span></a>
+          <a class="tile" href="../photos/women/5.jpg" data-gallery-item data-caption="我们照片 5"><img src="../photos/women/5.jpg" alt="我们照片 5"><span>照片 5</span></a>
+          <a class="tile" href="../photos/women/6.jpg" data-gallery-item data-caption="我们照片 6"><img src="../photos/women/6.jpg" alt="我们照片 6"><span>照片 6</span></a>
+          <a class="tile" href="../photos/women/7.jpg" data-gallery-item data-caption="我们照片 7"><img src="../photos/women/7.jpg" alt="我们照片 7"><span>照片 7</span></a>
+          <a class="tile" href="../photos/women/8.jpg" data-gallery-item data-caption="我们照片 8"><img src="../photos/women/8.jpg" alt="我们照片 8"><span>照片 8</span></a>
+          <a class="tile" href="../photos/women/9.jpg" data-gallery-item data-caption="我们照片 9"><img src="../photos/women/9.jpg" alt="我们照片 9"><span>照片 9</span></a>
+          <a class="tile" href="../photos/women/10.jpg" data-gallery-item data-caption="我们照片 10"><img src="../photos/women/10.jpg" alt="我们照片 10"><span>照片 10</span></a>
+          <a class="tile" href="../photos/women/11.jpg" data-gallery-item data-caption="我们照片 11"><img src="../photos/women/11.jpg" alt="我们照片 11"><span>照片 11</span></a>
+          <a class="tile" href="../photos/women/12.jpg" data-gallery-item data-caption="我们照片 12"><img src="../photos/women/12.jpg" alt="我们照片 12"><span>照片 12</span></a>
+          <a class="tile" href="../photos/women/13.jpg" data-gallery-item data-caption="我们照片 13"><img src="../photos/women/13.jpg" alt="我们照片 13"><span>照片 13</span></a>
+          <a class="tile" href="../photos/women/14.jpg" data-gallery-item data-caption="我们照片 14"><img src="../photos/women/14.jpg" alt="我们照片 14"><span>照片 14</span></a>
+          <a class="tile" href="../photos/women/15.jpg" data-gallery-item data-caption="我们照片 15"><img src="../photos/women/15.jpg" alt="我们照片 15"><span>照片 15</span></a>
+          <a class="tile" href="../photos/women/16.jpg" data-gallery-item data-caption="我们照片 16"><img src="../photos/women/16.jpg" alt="我们照片 16"><span>照片 16</span></a>
+          <a class="tile" href="../photos/women/17.jpg" data-gallery-item data-caption="我们照片 17"><img src="../photos/women/17.jpg" alt="我们照片 17"><span>照片 17</span></a>
+        </div>
+        <div class="video-card">
+          <video controls preload="metadata" poster="../videos/sample-poster.svg"><source src="../videos/women.mp4" type="video/mp4"></video>
+          <p class="story">这里写 我们 的故事、时间、地点，或者你想留下的一句话。</p>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer>Powered by GitHub Pages</footer>
+
+  <div class="lightbox" id="lightbox" aria-hidden="true" role="dialog" aria-label="照片预览">
+    <button class="lightbox-close" type="button" aria-label="关闭">&times;</button>
+    <button class="lightbox-nav lightbox-prev" type="button" aria-label="上一张">&lsaquo;</button>
+    <figure><img id="lightboxImage" src="" alt=""><figcaption class="lightbox-caption" id="lightboxCaption"></figcaption></figure>
+    <button class="lightbox-nav lightbox-next" type="button" aria-label="下一张">&rsaquo;</button>
+  </div>
+  <script src="../gallery.js?v=20260609b"></script>
+  <script src="../bgm.js?v=20260609b"></script>
+</body>
+</html>
